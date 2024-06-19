@@ -8,6 +8,7 @@ public class DiStart : MonoInstaller
     public override void InstallBindings()
     {
         BindServices();
+        Container.Bind<App>().AsSingle().NonLazy();
     }
 
     private void BindServices()
