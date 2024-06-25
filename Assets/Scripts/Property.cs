@@ -1,6 +1,6 @@
 using System;
 
-public class Property<T>
+public class Property<T>: IProperty<T>
 {
     private event Action<T> onChangeAction; 
 
@@ -20,6 +20,7 @@ public class Property<T>
 
     public Property()
     {
+        
     }
     
     public Property(T startValue)
