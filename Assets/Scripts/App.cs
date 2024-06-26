@@ -2,8 +2,7 @@ using Zenject;
 public class App
 {
     [Inject]
-    public void Construct(FormsManager formsManager)
+    public void Construct(FormLoader formLoader)
     {
-
     }
 }

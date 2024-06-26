@@ -1,10 +1,17 @@
 
+using UnityEngine;
+
 public class MainMenuViewModel
 {
-  private Property<int> _property = new Property<int>(2);
+  public Property<string> CreateRoomBtnText = new Property<string>();
+
+
+  public Command CreateRoomCmd = new Command();
 
   public MainMenuViewModel()
   {
-    _property.Value = 3;
+    CreateRoomBtnText.Value = "lalalal";
+    
+    CreateRoomCmd.Subscribe(() => {Debug.LogWarning(CreateRoomBtnText.Value);});
   }
 }

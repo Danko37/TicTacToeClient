@@ -18,10 +18,7 @@ public class Property<T>: IProperty<T>
         }
     }
 
-    public Property()
-    {
-        
-    }
+    public Property() { }
     
     public Property(T startValue)
     {

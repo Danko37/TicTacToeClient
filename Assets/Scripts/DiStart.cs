@@ -13,6 +13,6 @@ public class DiStart : MonoInstaller
 
     private void BindServices()
     {
-        Container.Bind<FormsManager>().FromComponentInNewPrefab(FormManager).AsSingle();
+        Container.Bind<FormLoader>().FromComponentInNewPrefab(FormManager).AsSingle();
     }
 }
