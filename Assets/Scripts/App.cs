@@ -2,7 +2,7 @@ using Zenject;
 public class App
 {
     [Inject]
-    public void Construct(FormLoader formLoader)
+    public void Construct(MainMenuFactory mainMenuFactory)
     {
     }
 }

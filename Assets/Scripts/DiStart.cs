@@ -14,5 +14,6 @@ public class DiStart : MonoInstaller
     private void BindServices()
     {
         Container.Bind<FormLoader>().FromComponentInNewPrefab(FormManager).AsSingle();
+        Container.Bind<MainMenuFactory>().AsSingle();
     }
 }

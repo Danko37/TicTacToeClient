@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class MainMenuViewModel
+public class MainMenuViewModel : ViewModelBase
 {
   public Property<string> CreateRoomBtnText = new Property<string>();
 
